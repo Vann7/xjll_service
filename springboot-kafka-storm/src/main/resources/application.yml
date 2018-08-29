@@ -1,0 +1,31 @@
+spring:
+  http:
+    encoding:
+      charset: UTF-8
+      enabled: false
+      force: true
+  messages:
+    encoding: UTF-8
+  datasource:
+    username: root
+    password: 123456
+    url: jdbc:mysql://127.0.0.1:3306/bigdata
+    driver-class-name: com.mysql.jdbc.Driver
+    type: com.alibaba.druid.pool.DruidDataSource
+  kafka:
+    bootstrap-servers: ubuntu:9092,ubuntu2:9092
+    consumer:
+      group-id: groupA
+      enable-auto-commit: false
+
+
+
+logging:
+  config: classpath:logback.xml
+  level:
+    com: debug
+server:
+  port: 8087
+
+
+

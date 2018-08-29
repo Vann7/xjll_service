@@ -1,0 +1,20 @@
+server:
+  port: 8081
+  address: localhost
+spring:
+  application:
+    name: comsumer
+  datasource:
+    username: root
+    password: 123456
+    url: jdbc:mysql://127.0.0.1:3306/bigdata
+    driver-class-name: com.mysql.jdbc.Driver
+  jpa:
+    database: MYSQL
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+#thrift:
+#  port: 8082
+#  host: 127.0.0.1
+#  timeout: 30000

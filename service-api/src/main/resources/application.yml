@@ -1,0 +1,49 @@
+
+spring:
+  application:
+    name: hello-service
+  datasource:
+    username: root
+    password: 123456
+    url: jdbc:mysql://127.0.0.1:3306/bigdata
+#    url: jdbc:mysql://172.18.3.251:3306/db_user
+    driver-class-name: com.mysql.jdbc.Driver
+
+#  jpa:
+#    database: MYSQL
+#    hibernate:
+#      ddl-auto: update
+#    show-sql: true
+
+  cache:
+    type: redis
+  mvc:
+    view:
+      prefix: /WEB-INF/jsp/
+      suffix: .jsp
+  redis:
+    host: 10.211.55.9
+    port: 6379
+
+server:
+  port: 8080
+eureka:
+  instance:
+    hostname: localhost
+#  client:
+#    service-url:
+#      defaultZone: http://localhost:8080/eureka/
+    register-with-eureka: true
+#  kafka:
+#    consumer:
+#      group-id: foo2
+#      bootstrap-servers: 10.211.55.9:9092, 10.211.55.10:9092
+#      key-deserializer:  org.apache.kafka.common.serialization.StringDeserializer
+#      value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+#    producer:
+#      batch-size: 65536
+#      buffer-memory: 524288
+#      retries: 0
+#      key-serializer:  org.apache.kafka.common.serialization.StringSerializer
+#      value-serializer: org.apache.kafka.common.serialization.StringSerializer
+#      bootstrap-servers: 10.211.55.9:9092, 10.211.55.10:9092

@@ -1,0 +1,26 @@
+server:
+  port: 8180
+zuul:
+  routes:
+    api-a:
+      path: /api-a/**
+      serviceId: hello-service
+    api-b:
+      path: /api-b/**
+      serviceId: fegin-server
+#    user:
+#      path: /user/**
+#      url: http://van-service:8081/user/
+#    server:
+#      path: /server/**
+#      url: http://van-service:8080/server/
+#    client:
+#      path: /client/**
+#      url: http://van-service:8081/client/
+eureka:
+  client:
+    service-url:
+     defaultZone: http://localhost:8761/eureka/
+spring:
+  application:
+    name: api-gatway

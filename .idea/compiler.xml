@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="api-gateway" />
+        <module name="consumer" />
+        <module name="dashboard" />
+        <module name="eureka-service" />
+        <module name="fegin-server" />
+        <module name="rabbitmq-hello" />
+        <module name="service-api" />
+        <module name="spark-wordCount" />
+        <module name="springboot-kafka-storm" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="fegin" target="1.8" />
+      <module name="gateway-api" target="1.7" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
