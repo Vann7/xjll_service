@@ -7,6 +7,15 @@ spring:
     password: 123456
     hikari:
       driver-class-name: com.mysql.jdbc.Driver
+  data:
+    mongodb:
+      database: test
+      host: 127.0.0.1
+      username: root
+      password: 123456
+      port: 27017
+      uri: mongodb://127.0.0.1:27017/myfirstMongodb
+
 mybatis:
   type-aliases-package: com.van.webSpring.bean
   mapper-locations: classpath:mapper/*.xml
