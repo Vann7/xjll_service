@@ -1,10 +1,8 @@
 package com.van.webSpring.service.imp;
 
 import com.van.webSpring.bean.User;
-import com.van.webSpring.dao.UserDao;
+import com.van.webSpring.dao.master.UserDao;
 import com.van.webSpring.service.UserService;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.annotation.ComponentScan;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
@@ -13,7 +11,7 @@ import java.util.List;
 
 @Service
 public class UserServiceImp implements UserService {
-    @Autowired
+    @Resource
     private UserDao userDao;
 
     @Override

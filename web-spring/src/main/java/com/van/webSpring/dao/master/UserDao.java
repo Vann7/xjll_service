@@ -1,4 +1,4 @@
-package com.van.webSpring.dao;
+package com.van.webSpring.dao.master;
 
 import com.van.webSpring.bean.User;
 import org.apache.ibatis.annotations.Mapper;

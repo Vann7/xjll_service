@@ -16,6 +16,7 @@ import java.util.List;
 
 @RestController
 @Scope("prototype")
+@RequestMapping("/user")
 public class UserController {
     private  Logger logger = LoggerFactory.getLogger(this.getClass());
 
